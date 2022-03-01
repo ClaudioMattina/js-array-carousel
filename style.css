@@ -1,6 +1,11 @@
 .my-img-container{
     width: 100%;
     height: 100vh;
+    display: none;
+}
+
+.active{
+    display: block;
 }
 
 
