@@ -42,4 +42,14 @@ buttonNext.addEventListener('click', function(){
      activeItem++; /* equivale a dire "il valore di activeItem +1" */
 
      mainImg[activeItem].classList.add("active");
-})
+});
+
+buttonBefore.addEventListener('click', function(){ 
+    /* al click aggiungere e togliere il display block e none 
+    ovvero tolgo la classe active e gli di none alla presente e aggiungo alla seguente active e gli tolgo none */
+
+    mainImg[activeItem].classList.remove("active");
+    activeItem--; /* equivale a dire "il valore di activeItem +1" */
+
+    mainImg[activeItem].classList.add("active");
+});
