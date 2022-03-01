@@ -18,11 +18,7 @@ for(i = 0; i < images.length; i++){
 contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`
-            if(i = [4]){
-                contenutoCarosello += `<div class = "my-img-container">
-                <img class="my-main-img" src="${images[0]} " alt="">
-         </div>`  
-            }
+            
 }
 
 /* collego in js l'elemento contenitore*/
@@ -58,7 +54,12 @@ buttonNext.addEventListener('click', function(){
 
      /* la nuova mainImg nella nuova posizione activeItem aggiunge la classe active */
      mainImg[activeItem].classList.add("active");
+  
 });
+
+if(activeItem = 4){
+    mainImg[0].classList.add("active")
+}
 
 
 /* la stessa cosa al buttonBefore per scorrere indietro, questa volta però invece di aggiungere uno, tolgo uno (con -- invece di ++) */
