@@ -24,13 +24,22 @@ const mainImg = document.getElementsByClassName("my-img-container");
 mainImg[0].classList.add("active");
 
 
+
+/* recupero dei bottoni */
 const buttonNext= document.getElementById("after");
 
 const buttonBefore= document.getElementById("before");
 
+/* creo una variabile "indice" che tenga il conto dell'immagine in cui si trova */
 
-/* buttonNext.addEventListener('click' function(){ */
-    /* al click aggiungere e togliere il display block e none */
-    /* ovvero tolgo la classe active e gli di none alla presente e aggiungo alla seguente active e gli tolgo none*/
+let activeItem = 0;
 
-/* }) */
+buttonNext.addEventListener('click', function(){ 
+     /* al click aggiungere e togliere il display block e none 
+     ovvero tolgo la classe active e gli di none alla presente e aggiungo alla seguente active e gli tolgo none */
+
+     mainImg[activeItem].classList.remove("active");
+     activeItem++; /* equivale a dire "il valore di activeItem +1" */
+
+     mainImg[activeItem].classList.add("active");
+})
