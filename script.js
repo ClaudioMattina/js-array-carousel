@@ -6,24 +6,23 @@
 
 const images = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg , "]
 
-const contenutoCarosello = '';
+let contenutoCarosello = '';
 
 for(i = 0; i < images.length; i++){
 
     /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
-    contenutoCarosello += `<div class = "my-img-container active">
-                               <img class="my-main-img" src="img/02.jpg" alt="">
-                           </div>`
+contenutoCarosello += `<div class = "my-img-container active">
+                               <img class="my-main-img" src="${images[i]} " alt="">
+                        </div>`
 }
 
-const wrapper = document.querySelector(".wrapper-main");
+const wrapper = document.querySelector("div.wrapper-main");
 wrapper.innerHTML += contenutoCarosello;
 
 
-
-
 const mainImg = document.getElementsByClassName("my-img-container");
-console.log(mainImg);
+mainImg[0].classList.add("active");
+
 
 const buttonNext= document.getElementById("after");
 
