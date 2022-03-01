@@ -5,9 +5,12 @@
 }
 
 .active{
-    display: block;
+    display: inline-block;
 }
 
+.wrapper-main{
+    width: 100%;
+}
 
 img{
     width: 100%;

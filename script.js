@@ -11,7 +11,7 @@ let contenutoCarosello = '';
 for(i = 0; i < images.length; i++){
 
     /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
-contenutoCarosello += `<div class = "my-img-container active">
+contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`
 }
