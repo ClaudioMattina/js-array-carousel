@@ -11,12 +11,13 @@ const contenutoCarosello = "";
 for(i = 0; i < immages.length; i++){
 
     /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
-    contenutoCarosello += `<div class="my-right-img-container">
-                              <img src="${immages[1]}" alt="">
+    contenutoCarosello += `<div class="my-img-container active">
+                               <img class="my-main-img" src="${immages[i]} " alt="">
                            </div>`
 }
 
-
+const wrapper = document.querySelector(".wrapper-main");
+wrapper.innerHTML += contenutoCarosello;
 
 
 
@@ -29,8 +30,8 @@ const buttonNext= document.getElementById("after");
 const buttonBefore= document.getElementById("before");
 
 
-buttonNext.addEventListener('click' function(){
+/* buttonNext.addEventListener('click' function(){ */
     /* al click aggiungere e togliere il display block e none */
     /* ovvero tolgo la classe active e gli di none alla presente e aggiungo alla seguente active e gli tolgo none*/
 
-})
+/* }) */
