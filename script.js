@@ -4,15 +4,15 @@
 /* ---- quindi implementare due classi con classe "display none e classe display block ( con bootstrap non dovrebbe servire)" */
 
 
-const immages = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg , "]
+const images = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg , "]
 
-const contenutoCarosello = "";
+const contenutoCarosello = '';
 
-for(i = 0; i < immages.length; i++){
+for(i = 0; i < images.length; i++){
 
     /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
-    contenutoCarosello += `<div class="my-img-container active">
-                               <img class="my-main-img" src="${immages[i]} " alt="">
+    contenutoCarosello += `<div class = "my-img-container active">
+                               <img class="my-main-img" src="img/02.jpg" alt="">
                            </div>`
 }
 
