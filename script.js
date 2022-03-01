@@ -4,5 +4,33 @@
 /* ---- quindi implementare due classi con classe "display none e classe display block ( con bootstrap non dovrebbe servire)" */
 
 
+const immages = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg , "]
+
+const contenutoCarosello = "";
+
+for(i = 0; i < immages.length; i++){
+
+    /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
+    contenutoCarosello += `<div class="my-right-img-container">
+                              <img src="${immages[1]}" alt="">
+                           </div>`
+}
+
+
+
+
+
+
 const mainImg = document.getElementsByClassName("my-img-container");
 console.log(mainImg);
+
+const buttonNext= document.getElementById("after");
+
+const buttonBefore= document.getElementById("before");
+
+
+buttonNext.addEventListener('click' function(){
+    /* al click aggiungere e togliere il display block e none */
+    /* ovvero tolgo la classe active e gli di none alla presente e aggiungo alla seguente active e gli tolgo none*/
+
+})
