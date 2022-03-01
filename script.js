@@ -10,6 +10,7 @@ const images = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg 
 /* creo variabile di valore vuoto che con il ciclo for riempirò */
 let contenutoCarosello = '';
 
+let firstImg = images[0];
 
 /* contatore che aggiunge un elemento nell' html che si ripete per la lunghezza dell'array (per quante sono le immagini) */
 for(i = 0; i < images.length; i++){
@@ -18,7 +19,12 @@ for(i = 0; i < images.length; i++){
 contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`
+                  
 }
+
+if(contenutoCarosello (!i)){
+    contenutoCarosello = firstImg;
+};
 
 /* collego in js l'elemento contenitore*/
 const wrapper = document.querySelector("div.wrapper-main");
@@ -65,3 +71,4 @@ buttonBefore.addEventListener('click', function(){
 
     mainImg[activeItem].classList.add("active");
 });
+
