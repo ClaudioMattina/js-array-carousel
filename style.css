@@ -14,5 +14,15 @@ img{
 }
 
 .my-right-img-container{
-    height: 20vh;
+    height: 18vh;
+}
+
+.my-icon-container{
+    height: 5vh;
+    background-color: burlywood;
+}
+
+.my-icon-container:hover{
+    background-color: brown;
+    color: white;
 }
