@@ -58,7 +58,7 @@ buttonNext.addEventListener('click', function(){
 });
 
 if(activeItem = 4){
-    mainImg[0].classList.add("active")
+    mainImg.reverse();
 }
 
 
