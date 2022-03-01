@@ -18,10 +18,10 @@ for(i = 0; i < images.length; i++){
 contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`
-            if(i=[4]){
-                contenutoCarosello = `<div class = "my-img-container">
+            if(i = [4]){
+                contenutoCarosello += `<div class = "my-img-container">
                 <img class="my-main-img" src="${images[0]} " alt="">
-         </div>`
+         </div>`  
             }
 }
 
