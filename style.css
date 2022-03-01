@@ -1,0 +1,18 @@
+.my-img-container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.my-right-container{
+    height: 100vh;
+}
+
+.my-right-img-container{
+    height: 20vh;
+}
