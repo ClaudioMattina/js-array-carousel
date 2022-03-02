@@ -20,10 +20,11 @@ contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`;
 
-rightCarosello += `<div class="my-right-img-container">
+ /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* rightCarosello += `<div class="my-right-img-container">
 <img src="${images[i]}" alt="">
-</div>`
-            
+</div>`;
+        */     
 }
 
 /* collego in js l'elemento contenitore*/
@@ -34,8 +35,8 @@ wrapper.innerHTML += contenutoCarosello;
 
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-const vediamo = document.querySelector("my-right-img-container"); 
-vediamo.innerHTML += rightCarosello;
+/* const vediamo = document.querySelector("my-right-container"); 
+vediamo.innerHTML += rightCarosello; */
 
 
 /* collego nel js l'elemento contenitore dell'immagine */
@@ -78,7 +79,14 @@ buttonBefore.addEventListener('click', function(){
 
     mainImg[activeItem].classList.remove("active");
     activeItem--; /* equivale a dire "il valore di activeItem -1" */
-
+    if(activeItem == 0){
+        activeItem = images.length -1;
+    }
+    else{
+        activeItem--;
+    }
     mainImg[activeItem].classList.add("active");
+
+    
 });
 
