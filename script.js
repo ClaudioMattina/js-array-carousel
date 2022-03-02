@@ -9,6 +9,7 @@ const images = ["img/01.jpg , img/02.jpg , img/03.jpg , img/04.jpg , img/05.jpg 
 
 /* creo variabile di valore vuoto che con il ciclo for riempirò */
 let contenutoCarosello = '';
+let rightCarosello = '';
 
 
 /* contatore che aggiunge un elemento nell' html che si ripete per la lunghezza dell'array (per quante sono le immagini) */
@@ -17,14 +18,23 @@ for(i = 0; i < images.length; i++){
     /* aggiungo all'elemento contenutoCarosello img che si trova in posizione i */
 contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
-                        </div>`
+                        </div>`;
+
+rightCarosello += `<img src="${images[i]} " alt="">`
             
 }
 
 /* collego in js l'elemento contenitore*/
 const wrapper = document.querySelector("div.wrapper-main");
+
 /* e gli dico di inserirci il risultato del ciclo for */
 wrapper.innerHTML += contenutoCarosello;
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+const vediamo = document.querySelector("my-right-img-container"); 
+vediamo.innerHTML += rightCarosello;
+
 
 /* collego nel js l'elemento contenitore dell'immagine */
 const mainImg = document.getElementsByClassName("my-img-container");
@@ -57,9 +67,7 @@ buttonNext.addEventListener('click', function(){
   
 });
 
-if(activeItem = 4){
-    mainImg.reverse();
-}
+
 
 
 /* la stessa cosa al buttonBefore per scorrere indietro, questa volta però invece di aggiungere uno, tolgo uno (con -- invece di ++) */
