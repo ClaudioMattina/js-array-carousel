@@ -20,7 +20,9 @@ contenutoCarosello += `<div class = "my-img-container">
                                <img class="my-main-img" src="${images[i]} " alt="">
                         </div>`;
 
-rightCarosello += `<img src="${images[i]} " alt="">`
+rightCarosello += `<div class="my-right-img-container">
+<img src="${images[i]}" alt="">
+</div>`
             
 }
 
